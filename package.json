@@ -1,0 +1,28 @@
+{
+  "name": "trial",
+  "version": "1.0.0",
+  "description": "tries to get node server running on github",
+  "keywords": [
+    "github",
+    "node"
+  ],
+  "homepage": "https://muktoakash.github.io/Server/index.html",
+  "bugs": {
+    "url": "https://github.com/muktoakash/Server/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muktoakash/Server.git"
+  },
+  "license": "ISC",
+  "author": "Mukto Akash",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}
