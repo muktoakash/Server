@@ -19,10 +19,16 @@
   "type": "commonjs",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "file1": "ejs ./views/index.ejs -o ./index.html",
+    "file2": "ejs ./views/pages/page-2.ejs -o page-2.html",
+    "file3": "ejs ./views//pages/page-3.ejs -o page-3.html",
+    "build": "npm run file1 && npm run file2 && npm run file3",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "ejs": "^3.1.10",
+    "ejs-cli": "^2.2.3",
     "express": "^4.21.2"
   }
 }
